@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/css/editor-styles.css">
+    <title>RK online ide website</title>
+</head>
+
+<body>
+
+    <div class="heading">
+        <h1>RK online ide website</h1>
+        <p>This WebSite is only for mode-javascript or not another programing languages will run</p>
+    </div>
+    <div class="editor">
+        <div class="editor__wrapper">
+            <div class="editor__body">
+                <div id="editorCode" class="editor__code"></div>
+            </div>
+            <div class="editor__footer">
+                <div class="editor__footer--left">
+                    <button class="editor__btn editor__run">Run ></button>
+                    <button class="editor__btn editor__reset">Reset ></button>
+                </div>
+                <div class="editor__footer--right">
+                    <div class="editor__console">
+                        <ul class="editor__console-logs"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer style="background: #111;
+    color: white;
+    height: 5%;
+    bottom: -34px;">
+        <marquee behavior="scroll" direction="right" style="padding: 8px 0;">This Website Is DONE BY <span class="far fa-copyright"></span> RAHUL KUMAR</marquee>
+    </footer>
+
+    <!-- Required Ace Libraries -->
+    <script src="lib/js/ace-editor/src-min/ace.js"></script>
+    <script src="lib/js/ace-editor/src-min/mode-javascript.js"></script>
+    <script src="lib/js/ace-editor/src-min/ext-language_tools.js"></script>
+
+    <!-- Custom Scripts -->
+    <script src="lib/js/editor.js"></script>
+    <script src="lib/js/editor-console.js"></script>
+</body>
+
+</html>
